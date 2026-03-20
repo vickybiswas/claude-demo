@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python OOP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculator</h1>
+
+        <div class="input-group">
+            <label for="expression">Expression:</label>
+            <input
+                type="text"
+                id="expression"
+                placeholder="e.g., 1 + 2 - 4 or 2 ** 3 or sqrt(9)"
+                autocomplete="off"
+            >
+            <div class="operation-info">
+                Supports: + - * / ** sqrt() parentheses
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="calculate-btn" id="calculateBtn">Calculate</button>
+            <button class="clear-btn" id="clearBtn">Clear</button>
+        </div>
+
+        <div class="result-container" id="resultContainer" style="display: none;">
+            <div class="result-label">Result</div>
+            <div class="result-value" id="resultValue">-</div>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
