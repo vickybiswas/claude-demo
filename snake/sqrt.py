@@ -12,13 +12,12 @@ from operation import Operation
 class SquareRoot(Operation):
     """Square root operation: sqrt(a)."""
 
-    def calculate(self, operand_number, unused=None):
+    def calculate(self, operand: float) -> float:
         """
         Calculate the square root of a number.
 
         Args:
-            operand_number: Number to take square root of
-            unused: Unused parameter (for interface compatibility)
+            operand: Number to take square root of
 
         Returns:
             float: Square root of the number
@@ -26,7 +25,6 @@ class SquareRoot(Operation):
         Raises:
             ValueError: If operand is negative
         """
-        if operand_number < 0:
+        if operand < 0:
             raise ValueError("Cannot take square root of negative number")
-        calculated_result = math.sqrt(operand_number)
-        return calculated_result
+        return math.sqrt(operand)

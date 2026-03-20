@@ -8,15 +8,15 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from operation import Operation
 
 
-class Divide(Operation):
+class DIVIDE(Operation):
     """Division operation: a / b."""
 
-    def calculate(self, FIRST_NUMBER, SECOND_NUMBER=None):
+    def calculate(self, FIRST_NUMBER: float, SECOND_NUMBER: float = None) -> float:
         """
         Divide two numbers.
 
         Args:
-            FIRST_NUMBER: First operand
+            FIRST_NUMBER: First operand (dividend)
             SECOND_NUMBER: Second operand (divisor)
 
         Returns:

@@ -11,7 +11,7 @@ from operation import Operation
 class Add(Operation):
     """Addition operation: a + b."""
 
-    def calculate(self, firstNumber, secondNumber=None):
+    def calculate(self, firstNumber: float, secondNumber: float) -> float:
         """
         Add two numbers.
 
@@ -22,5 +22,4 @@ class Add(Operation):
         Returns:
             float: Sum of the two numbers
         """
-        calculatedResult = firstNumber + secondNumber
-        return calculatedResult
+        return firstNumber + secondNumber

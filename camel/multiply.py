@@ -11,7 +11,7 @@ from operation import Operation
 class Multiply(Operation):
     """Multiplication operation: a * b."""
 
-    def calculate(self, firstNumber, secondNumber=None):
+    def calculate(self, firstNumber: float, secondNumber: float) -> float:
         """
         Multiply two numbers.
 
@@ -22,5 +22,4 @@ class Multiply(Operation):
         Returns:
             float: Product of the two numbers
         """
-        calculatedResult = firstNumber * secondNumber
-        return calculatedResult
+        return firstNumber * secondNumber

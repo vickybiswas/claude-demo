@@ -21,3 +21,4 @@
 - Avoid ambiguous abbreviations (e.g., use `userId` instead of `uid`)
 - Keep naming consistent within modules
 - Document complex variables/classes with docstrings
+- Follow best practices from @../CLAUDE.md

@@ -20,3 +20,4 @@
 ## Best Practices
 - Be descriptive with your snake_case names
 - Avoid single-letter variable names (except for loop counters)
+- Follow best practices from @../CLAUDE.md

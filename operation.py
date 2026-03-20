@@ -7,7 +7,7 @@ class Operation(ABC):
     """Base class for all calculator operations."""
 
     @abstractmethod
-    def calculate(self, a, b=None):
+    def calculate(self, a: float, b: float | None = None) -> float:
         """
         Perform the operation.
 

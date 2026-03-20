@@ -1,15 +1,11 @@
-"""Power (exponentiation) operation with snake_case naming."""
-
 import os
 import sys
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from operation import Operation
 
-
-class Power(Operation):
-    """Power operation: a ** b (exponentiation)."""
+class EXPONENT(Operation):
+    """Exponent operation: base ** exponent."""
 
     def calculate(self, base: float, exponent: float) -> float:
         """

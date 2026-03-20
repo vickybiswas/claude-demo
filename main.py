@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify, send_file
 from expression_parser import ExpressionParser
 
 
-def create_app():
+def create_app() -> Flask:
     """Create and configure the Flask application.
 
     Returns:
@@ -59,7 +59,7 @@ def create_app():
     return app
 
 
-def main():
+def main() -> None:
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(description='Python OOP Calculator')
     parser.add_argument(
