@@ -4,7 +4,7 @@ import re
 from enum import Enum, auto
 
 from camel import Add, Multiply, Sine, Cosine
-from CAPS import Subtract, Divide, EXPONENT, LOGARITHM, LOG_UPPER, LOG_E
+from CAPS import SUBTRACT, DIVIDE, EXPONENT, LOGARITHM, LOG_UPPER, LOG_E
 from snake import Power, SquareRoot, Root, Cube
 
 
@@ -54,8 +54,8 @@ class ExpressionParser:
         """Initialize parser with operation instances."""
         self.add_op = Add()
         self.multiply_op = Multiply()
-        self.subtract_op = Subtract()
-        self.divide_op = Divide()
+        self.subtract_op = SUBTRACT()
+        self.divide_op = DIVIDE()
         self.power_op = Power()
         self.sqrt_op = SquareRoot()
         self.sin_op = Sine()
